@@ -1,0 +1,12 @@
+{
+	"_id":"id",
+	"username": "string",
+	"tags": ["array"],
+	"info": {
+		"first_name": "string",
+		"last_name": "string",
+		"address": {}
+	},
+	"auth": "cant remember",
+	"role": "Role ref"
+}

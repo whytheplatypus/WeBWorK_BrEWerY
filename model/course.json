@@ -1,0 +1,60 @@
+{
+	"tags": [],
+	"state": "open/closed",
+	"conf": {},
+	"start": "Date",
+	"end": "Date",
+	"info": {
+
+	},
+	//teams are course specific so maybe they can just live here
+	"participants":[{
+		"tags": [],
+		"status": "active/inactive",
+
+		//participant specific course overrides
+		
+		"description": "text",
+		"entity": {
+			"type": "user/team",
+			"ref": "user/team ref",
+			"role": "Role"
+		}
+	}],
+	"sets":[{
+		"set": "set ref",
+		"due": "Date",
+		"assigned": "Date",
+		"answer": "Date",
+		"ip_restriction": ["ip"],
+		"tags": [],
+		//any properties of Set can be over ridden here
+		
+		"participants":[{
+			"id": "user or team ref",
+			"tags":[],
+			"state":"active/done",
+			//over rides of any above
+			
+			//problem pools
+			"problems": [{
+				"current_grade": "Grade",
+				"incorrect_attempts": "int",
+				"correct_attempts": "int",
+				"number_of_instances": "int",
+				"current_Instance": {
+					//distinguishing problem info
+				},
+
+				"attempts": [{
+					"time": "Date",
+					"score": "problem specific score",
+					"tags": [],
+					"problem": {
+						//distinguishing problem info
+					}
+				}]
+			}]
+		}],
+	}]
+}
